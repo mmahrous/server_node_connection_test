@@ -17,4 +17,4 @@ node node2.js
 ```
 it will be up on port 5472
 
-use Postman(https://www.getpostman.com/) or your browser to get http://localhost:3000/nodes the response will be array of the nodes that contain every node information (CPU, hostname, totalmem, etc..)
+use [https://www.getpostman.com/](Postman) or your browser to get http://localhost:3000/nodes the response will be array of the nodes that contain every node information (CPU, hostname, totalmem, etc..)

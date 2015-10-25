@@ -14,7 +14,6 @@ app.get('/nodes', function(req, res) {
 			    	nodes.push(body);
 				}
 			})
-
 			i++
 			nodeRequests(i); // recursive
 		}

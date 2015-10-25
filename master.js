@@ -7,9 +7,9 @@ var express = require('express'),
 app.get('/nodes', function(req, res) {
 	function nodeRequests(i){
 		if (i == nodeport.length) { //send the result
-			res.send(nodes);
+			res.json(JSON.stringify(nodes));
 		}else{
-			request.get('http://localhost:'+nodeport[i]+'/who', function (error, response, body) {
+			request.get('http://localhost:'+nodeport[i]+'/who', "utf8",function (error, response, body) {
 		 		if (!error && response.statusCode == 200) {
 			    	nodes.push(body);
 				}
